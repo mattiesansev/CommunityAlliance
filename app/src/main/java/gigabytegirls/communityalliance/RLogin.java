@@ -7,8 +7,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class RLogin extends AppCompatActivity {
+    public DatabaseHelper helper = new DatabaseHelper(this);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +21,19 @@ public class RLogin extends AppCompatActivity {
         final EditText RPassword = (EditText) findViewById(R.id.RPassword);
         final Button RLogin = (Button) findViewById(R.id.RLogin);
         final TextView registerLink = (TextView) findViewById(R.id.registerHere);
+
+        String namestr = RName.getText().toString();
+        String userstr = RUsername.getText().toString();
+        String passstr = RPassword.getText().toString();
+        //String phonestr = RPhone.getText().toString();
+        String password = helper.searchPass(userstr);
+        if(password.equals(RPassword)){
+            //yay
+        }
+        else{
+            Toast temp = Toast.makeText(RLogin.this, "Incorrect username and/or password", Toast.LENGTH_SHORT);
+            temp.show();
+        }
 
         registerLink.setOnClickListener(new View.OnClickListener(){
             @Override

@@ -6,4 +6,75 @@
     android:layout_height="match_parent"
     tools:context="gigabytegirls.communityalliance.Individual">
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome!"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="16dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/shelter"
+        android:layout_marginLeft="7dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What can you do to help?"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="17dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="31dp" />
+
+    <CheckBox
+        android:id="@+id/shelter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="place to stay"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/textView4"
+        android:layout_marginLeft="12dp" />
+
+    <CheckBox
+        android:id="@+id/money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="money"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="17dp"
+        app:layout_constraintTop_toBottomOf="@+id/shelter"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/shelter" />
+
+    <CheckBox
+        android:id="@+id/ally"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="friend/contact"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="23dp"
+        app:layout_constraintTop_toBottomOf="@+id/money"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/money" />
+
+    <CheckBox
+        android:id="@+id/food"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="meals/donations"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="25dp"
+        app:layout_constraintTop_toBottomOf="@+id/ally"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/ally" />
 </android.support.constraint.ConstraintLayout>

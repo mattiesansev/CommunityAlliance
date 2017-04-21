@@ -17,7 +17,13 @@
         </activity>
         <activity android:name=".RLogin" />
         <activity android:name=".RSignup" />
-        <activity android:name=".RAreaActivity"></activity>
+        <activity android:name=".RAreaActivity" />
+        <activity android:name=".RChoices" />
+        <activity android:name=".ALogin" />
+        <activity android:name=".AUserSpace" />
+        <activity android:name=".ASignUp" />
+        <activity android:name=".Individual" />
+        <activity android:name=".Buisness"></activity>
     </application>
 
 </manifest>

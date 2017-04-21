@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
     }
     public void goToRSignUp (View v){
-        Intent i = new Intent(MainActivity.this, RSignUp.class);
+        Intent i = new Intent(MainActivity.this, RSignup.class);
         startActivity(i);
     }
     public void goToALogin (View v){
@@ -25,8 +25,8 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
     }
     public void goToASignUp (View v){
-        Intent i = new Intent(MainActivity.this, ASignUp.class);
-        startActivity(i);
+       // Intent i = new Intent(MainActivity.this, ASignUp.class);
+       // startActivity(i);
     }
 
 }

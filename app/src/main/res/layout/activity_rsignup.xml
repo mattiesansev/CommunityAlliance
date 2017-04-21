@@ -30,34 +30,20 @@
         android:text="Password"
         android:ems="10"
         android:id="@+id/RPassword"
-        android:layout_below="@+id/RUsername"
+        android:hint="Password"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:hint="Password" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:text="Phone Number"
-        android:ems="10"
-        android:layout_below="@+id/RPassword"
-        android:id="@+id/RPhone"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:hint="Phone Number" />
+        android:layout_below="@+id/RUsername" />
 
     <Button
         android:text="Sign Up"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="29dp"
         android:id="@+id/RRegister"
-        android:layout_below="@+id/RPhone"
+        android:onClick="onClick"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/RPassword" />
 
     <EditText
         android:layout_width="wrap_content"

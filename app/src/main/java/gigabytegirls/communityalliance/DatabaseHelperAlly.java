@@ -11,7 +11,7 @@ import android.util.Log;
  * Created by mattiesanseverino on 4/12/17.
  */
 
-public class DatabaseHelper  extends SQLiteOpenHelper{
+public class DatabaseHelperAlly  extends SQLiteOpenHelper{
     private final static int DATABASE_VERSION = 1;
     private final static String DATABASE_NAME = "Rcontacts.db";
     private final static String TABLE_NAME = "Rcontacts";
@@ -24,7 +24,7 @@ public class DatabaseHelper  extends SQLiteOpenHelper{
             "(id integer primary key not null , " +
             "name text not null , user text not null , pass text not null)";// , phone text not null)";
 
-    public DatabaseHelper(Context context) {
+    public DatabaseHelperAlly(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);}
     @Override
     public void onCreate(SQLiteDatabase db) {
@@ -75,7 +75,7 @@ public class DatabaseHelper  extends SQLiteOpenHelper{
         }
         cursor.close();
         Log.i("password found: ", p);
-     return p;
+        return p;
     }
 
 }

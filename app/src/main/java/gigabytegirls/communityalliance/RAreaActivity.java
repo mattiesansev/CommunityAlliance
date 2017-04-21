@@ -15,7 +15,7 @@ public class RAreaActivity extends AppCompatActivity {
         setContentView(R.layout.activity_rarea);
 
         final EditText RUsername = (EditText) findViewById(R.id.RUsername);
-        final EditText RPhone = (EditText) findViewById(R.id.RPhone);
+        //final EditText RPhone = (EditText) findViewById(R.id.RPhone);
         final TextView welcomeMessage = (TextView) findViewById(R.id.welcome);
     }
 }

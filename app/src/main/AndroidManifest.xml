@@ -23,7 +23,8 @@
         <activity android:name=".AUserSpace" />
         <activity android:name=".ASignUp" />
         <activity android:name=".Individual" />
-        <activity android:name=".Buisness"></activity>
+        <activity android:name=".Buisness" />
+        <activity android:name=".details"></activity>
     </application>
 
 </manifest>
